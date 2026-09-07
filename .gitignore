@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# Environments
+venv/
+.venv/
+env/
+
+# Generated data & model artifacts (regenerate via the scripts)
+data/images/
+models/*.keras
+models/*.h5
+mlruns/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
