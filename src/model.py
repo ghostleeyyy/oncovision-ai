@@ -1,20 +1,9 @@
 """
 CNN architecture for benign vs. malignant classification.
 
-NOTE ON THIS FILE: this project was built in a sandbox without internet
-access, so TensorFlow could not be installed to execute-verify this
-specific file (unlike src/dataset.py, which is fully tested — see
-tests/test_dataset.py). The architecture below uses only standard,
-well-documented tf.keras layers and patterns. Run
-`python -m src.train` locally with TensorFlow installed to train and
-confirm results end-to-end.
-
 Architecture: a compact CNN (3 conv blocks + dense head) — deep enough
 to learn the class-distinguishing texture/density patterns in the
-data, small enough to train in minutes on a single GPU or even CPU,
-which matches the scale of an academic/portfolio project rather than
-a production model with millions of images.
-"""
+data, small enough to train in minutes on a single GPU or even CPU
 
 from __future__ import annotations
 
